@@ -1,0 +1,7 @@
+{%- block title "Please select form" -%}
+
+{%- block body -%}
+    <div><a href="{{ path("broken", { entityA: 1 }) }}">Broken form due to form nesting + FormEvents::POST_SET_DATA</a></div>
+    <div><a href="{{ path("working", { entityA: 1 }) }}">Working form</a></div>
+{%- endblock -%}
+
