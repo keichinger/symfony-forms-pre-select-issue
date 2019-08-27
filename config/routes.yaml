@@ -1,1 +1,15 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
 
+broken:
+    path: /{entityA}/broken
+    controller: App\Controller\DefaultController::broken
+    requirements:
+        entityA: '\d+'
+
+working:
+    path: /{entityA}/working
+    controller: App\Controller\DefaultController::working
+    requirements:
+        entityA: '\d+'
